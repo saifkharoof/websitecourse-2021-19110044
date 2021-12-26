@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name = "viewport" content = "width = device-width , initial-scale =1.0">
+    <link rel="stylesheet" href="style/header&footer.css">
+    <link rel="stylesheet" href="style/accordion.css">
+    <link rel="stylesheet" href="style/cart-page.css">
+</head>  
+
+<body>
+    <header>
+        <div id="logo-pic">
+            <img src="images/logo-removebg-preview.png" alt="saiftech" id="logo" style="height: 100px;">
+        </div>
+        
+     <nav id="main-menu">
+         <div id="menu-items1">
+
+                    <form>
+                    <div id="search-bar">
+                    <input type="searchbox" placeholder="type to search" id="search" size="40" > 
+                    <button> <img src="images/icons8-search-90.png" style="height:15px"> </button>
+                    </div>
+                    </form>
+
+                    <div class="login">
+                        <a href="login-page.html" class="links">
+                            <b>login</b>
+                        </a>
+                    </div>
+
+                    <div class="register">
+                        <a href="register.html" class="links">
+                            <b>register</b>
+                        </a>
+                    </div>
+
+                    <div id="account">
+                        <a href="profile page.html" class="links">
+                            <b>account</b>
+                        </a>
+                    </div>
+
+                    <div id="cart">
+                        <a href="cart.html" class="links">
+                            <b>cart</b>
+                        </a>
+                    </div>
+
+         </div>
+               
+    <div id="menu-items2">
+
+        <div class="item-hf">
+            <a href="products page.html" class="links">
+                <b>components</b>
+            </a>
+        </div>
+
+        <div class="item-hf" id="acce">
+            <a href="products page.html" class="links">
+                <b>accessories</b>
+            </a>
+        </div>
+
+    </div>
+    </nav>
+
+</header>
+
+            <main>
+
+                <h1>checkout</h1>
+                    <div class="accordion-body">
+                        <div class="accordion">
+                            <div class="container">
+                                <div class="label">
+                                    login or register
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="btn-link">login</a>
+                                    <a href="#" class="btn-link">register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="accordion">
+                            <div class="container">
+                                <div class="label">
+                                    delivery method
+                                </div>
+                                <div class="content">
+
+                                    <form>
+
+                                        <label for ="fd"> fast delivery            <input type = "radio" name="del" id="fd" class="choice"> </label>
+                                        <label for ="sd"> slow delivery (2-3 days) <input type = "radio" name="del" id="sd" class="choice"> </label>
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="accordion">
+                            <div class="container">
+                                <div class="label">
+                                    payment method
+                                </div>
+                                <div class="content">
+
+                                    <form class="enter">
+                                    <label for="cash">cash <input type="radio" id="cash" name="pay" class="choice">  </label>
+                                    
+                                    <label for="visa">visa (not available now) <input type="radio" id="visa" name="pay" class="choice"> </label>
+                                    
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-body">
+                        <div class="accordion">
+                            <div class="container">
+                                <div class="label">
+                                    confirm order
+                                </div>
+                                <div class="content">
+
+                                    <section>
+
+                                        <div class="information">
+                                            <h4> image</h4>
+                                            <h4> product name</h4>
+                                            <h4> model </h4>
+                                            <h4> quantity </h4>
+                                            <h4> unit price </h4>
+                                            <h4> total price</h4>
+                                        </div>
+                        
+                                        <div class="display">
+                                            <img src="images/cpu.jpg" id="product-image">
+                                            <h4> cpu </h4>
+                                            <h4> 200000 </h4>
+                                        <div id ="quantity"> <h4>2</h4> <form><button>+</button></form> </div>
+                                            <h4>200jd</h4>
+                                            <h4>400jd</h4>
+                                        </div>
+                        
+                                        
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+
+            <script>
+                const accordion = document.getElementsByClassName('container');
+
+                for (i = 0 ; i < accordion.length; i++) {
+                    accordion[i].addEventListener('click' ,function() {
+
+                        this.classList.toggle('active')
+
+                    })
+                }
+            </script>
+
+<footer>
+
+    <div id="contact-us">
+        <a href="aboutus.html" class="links">
+            <b>contact-us</b>
+        </a>
+    </div>
+
+    <div id="help-center">
+        <a href="aboutus.html" class="links">
+            <b>help-center</b>
+        </a>
+    </div>
+
+    <div id="about-us">
+        <a href="aboutus.html" class="links">
+            <b>about-us</b>
+        </a>
+    </div>
+
+    <div class="register">
+        <a href="register.html" class="links">
+            <b>register</b>
+        </a>
+    </div>
+
+    <div class="login">
+        <a href="login-page.html" class="links">
+            <b>login</b>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+
+
+
+</html>

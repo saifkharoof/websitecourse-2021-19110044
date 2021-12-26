@@ -1,0 +1,113 @@
+body{
+    background-image: url(../images/wallpaper.jpg);
+    background-size:cover ;
+    backdrop-filter: blur(1.5px);
+}
+
+h1{
+    text-align: center;
+    color: #09BC8A;
+    margin-top: 2%;
+}
+
+
+.accordion{
+    width: 40%;
+    margin: 90px auto;
+    color: black;
+    background-color: #74b3ce;
+    padding: 45px 45px;
+}
+
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion .label::before {
+    content: "+";
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.accordion .content {
+    position: relative;
+    background-color: #74b3ce;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    transition: 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.accordion .container.active .content{
+    height: 90%;
+    background-color: #74b3ce;
+}
+ 
+.accordion .container.active .label::before{
+    content: "-";
+    font-size: 30px;
+}
+
+.btn-link {
+    background-color: #172A3A;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.btn-link:hover {
+    background-color: #0b141b;
+}
+
+.choice, label{
+    margin-bottom: 11%;
+}
+
+.enter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+ #tex {
+ margin:2%;
+} 
+
+.text {
+    margin-bottom: 20px;
+}
+
+table thead tbody{
+  padding: 20px;
+}
+
+@media (max-width:1024px) {
+    .accordion {
+        width:70%;
+    }
+}
+
+@media (max-width:468px) {
+    .accordion {
+        width:100%;
+    }
+}
